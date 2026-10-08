@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="تاجسرا | فروشگاه تخصصی بدلیجات خام و آماده، گیره مو، تل مو، تاج عروس و اکسسوری‌های لوکس - پروین آتشکار" />
+  <title>تاجسرا | فروشگاه بدلیجات و اکسسوری مو</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Vazirmatn', 'system-ui', 'sans-serif'] },
+          colors: {
+            gold: {
+              50: '#fbf8f1',
+              100: '#f6efdc',
+              200: '#ecdcba',
+              300: '#dfc28e',
+              400: '#d1a45f',
+              500: '#c48c42',
+              600: '#b07537',
+              700: '#925b30',
+              800: '#784a2c',
+              900: '#633e27',
+            },
+            rose: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              200: '#fecdd3',
+              300: '#fda4af',
+              400: '#fb7185',
+              500: '#f43f5e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased">
+
+  <!-- Header -->
+  <header id="header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-stone-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2 group">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-white font-bold text-lg shadow-md group-hover:scale-105 transition-transform">
+            ت
+          </div>
+          <div>
+            <span class="text-xl font-bold text-stone-800 tracking-tight">تاجسرا</span>
+            <span class="hidden sm:block text-[10px] text-gold-600 font-medium -mt-1">پروین آتشکار</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="index.html" class="text-gold-600 border-b-2 border-gold-500 pb-0.5">خانه</a>
+          <a href="products.html" class="text-stone-600 hover:text-gold-600 transition-colors">محصولات</a>
+          <a href="about.html" class="text-stone-600 hover:text-gold-600 transition-colors">درباره ما</a>
+          <a href="contact.html" class="text-stone-600 hover:text-gold-600 transition-colors">تماس با ما</a>
+        </nav>
+
+        <!-- CTA + Mobile -->
+        <div class="flex items-center gap-3">
+          <a href="https://wa.me/989360665616" target="_blank" rel="noopener"
+             class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-l from-gold-500 to-gold-600 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md hover:shadow-lg hover:scale-105 transition-all">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5 prec-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            سفارش سریع
+          </a>
+          <button id="menuBtn" class="md:hidden p-2 rounded-lg hover:bg-stone-100 transition-colors" aria-label="منو">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-stone-100 bg-white">
+      <nav class="flex flex-col px-4 py-4 gap-1 text-sm font-medium">
+        <a href="index.html" class="px-4 py-3 rounded-lg bg-gold-50 text-gold-700">خانه</a>
+        <a href="products.html" class="px-4 py-3 rounded-lg text-stone-600 hover:bg-stone-50">محصولات</a>
+        <a href="about.html" class="px-4 py-3 rounded-lg text-stone-600 hover:bg-stone-50">درباره ما</a>
+        <a href="contact.html" class="px-4 py-3 rounded-lg text-stone-600 hover:bg-stone-50">تماس با ما</a>
+        <a href="https://wa.me/989360665616" target="_blank" class="mt-2 mx-4 py-3 text-center rounded-full bg-gradient-to-l from-gold-500 to-gold-600 text-white font-medium">سفارش از واتساپ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative pt-24 md:pt-32 pb-16 md:pb-24 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-bl from-gold-50 via-stone-50 to-rose-50"></div>
+    <div class="absolute top-20 left-10 w-72 h-72 bg-gold-200/40 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-96 h-96 bg-rose-200/30 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="text-center lg:text-right order-2 lg:order-1">
+          <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur px-4 py-1.5 rounded-full text-sm text-gold-700 font-medium shadow-sm mb-6 border border-gold-100">
+            <span class="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></span>
+            فروشگاه تخصصی اکسسوری مو
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-stone-900 leading-tight mb-6">
+            زیبایی موهای شما
+            <span class="block text-transparent bg-clip-text bg-gradient-to-l from-gold-500 to-gold-700">با تاجسرا</span>
+          </h1>
+          <p class="text-lg text-stone-600 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+            بدلیجات خام و آماده، گیره مو، تل مو، تاج عروس و انواع اکسسوری‌های لوکس با کیفیت عالی و قیمت مناسب. طراحی و انتخاب با سلیقه پروین آتشکار.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="products.html" class="inline-flex items-center justify-center gap-2 bg-gradient-to-l from-gold-500 to-gold-600 text-white px-8 py-3.5 rounded-full font-semibold shadow-lg shadow-gold-500/30 hover:shadow-xl hover:scale-105 transition-all">
+              مشاهده محصولات
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </a>
+            <a href="https://wa.me/989360665616" target="_blank" class="inline-flex items-center justify-center gap-2 bg-white text-stone-700 px-8 py-3.5 rounded-full font-semibold border border-stone-200 hover:border-gold-300 hover:bg-gold-50 transition-all">
+              <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              تماس واتساپ
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual -->
+        <div class="order-1 lg:order-2 relative">
+          <div class="relative aspect-square max-w-md mx-auto">
+            <div class="absolute inset-0 bg-gradient-to-br from-gold-200 to-rose-200 rounded-full blur-2xl opacity-60"></div>
+            <div class="relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-gold-100 p-2">
+              <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343a?w=600&h=600&fit=crop" 
+                   alt="تاج و اکسسوری عروس" 
+                   class="w-full h-full object-cover rounded-2xl"
+                   loading="eager" />
+            </div>
+            <!-- Floating badges -->
+            <div class="absolute -bottom-4 -right-4 bg-white rounded-2xl shadow-xl px-4 py-3 border border-gold-100">
+              <div class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-full bg-gold-100 flex items-center justify-center text-gold-600">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-stone-800">کیفیت تضمینی</p>
+                  <p class="text-xs text-stone-500">بدلیجات درجه یک</p>
+                </div>
+              </div>
+            </div>
+            <div class="absolute -top-4 -left-4 bg-white rounded-2xl shadow-xl px-4 py-3 border border-rose-100">
+              <div class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center text-rose-500">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-stone-800">تنوع بالا</p>
+                  <p class="text-xs text-stone-500">خام و آماده</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-900 mb-3">دسته‌بندی محصولات</h2>
+        <p class="text-stone-500 max-w-xl mx-auto">هر آنچه برای زیبایی مو و استایل عروس نیاز دارید</p>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <!-- Category 1 -->
+        <a href="products.html#girah" class="group relative overflow-hidden rounded-2xl aspect-[4/5] bg-stone-100">
+          <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=500&fit=crop" alt="گیره مو" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-0 inset-x-0 p-4 text-white">
+            <h3 class="font-bold text-lg">گیره مو</h3>
+            <p class="text-sm text-white/80">انواع گیره و کلیپس</p>
+          </div>
+        </a>
+        <!-- Category 2 -->
+        <a href="products.html#tal" class="group relative overflow-hidden rounded-2xl aspect-[4/5] bg-stone-100">
+          <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=500&fit=crop" alt="تل مو" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-0 inset-x-0 p-4 text-white">
+            <h3 class="font-bold text-lg">تل مو</h3>
+            <p class="text-sm text-white/80">تل و هدبندهای شیک</p>
+          </div>
+        </a>
+        <!-- Category 3 -->
+        <a href="products.html#taj" class="group relative overflow-hidden rounded-2xl aspect-[4/5] bg-stone-100">
+          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&h=500&fit=crop" alt="تاج عروس" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-0 inset-x-0 p-4 text-white">
+            <h3 class="font-bold text-lg">تاج عروس</h3>
+            <p class="text-sm text-white/80">تاج‌های لوکس عروسی</p>
+          </div>
+        </a>
+        <!-- Category 4 -->
+        <a href="products.html#accessory" class="group relative overflow-hidden rounded-2xl aspect-[4/5] bg-stone-100">
+          <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=400&h=500&fit=crop" alt="اکسسوری" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-0 inset-x-0 p-4 text-white">
+            <h3 class="font-bold text-lg">اکسسوری</h3>
+            <p class="text-sm text-white/80">بدلیجات خام و آماده</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="py-16 md:py-20 bg-stone-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-stone-900 mb-2">محصولات ویژه</h2>
+          <p class="text-stone-500">پرفروش‌ترین و محبوب‌ترین آیتم‌ها</p>
+        </div>
+        <a href="products.html" class="inline-flex items-center gap-1 text-gold-600 font-medium hover:gap-2 transition-all">
+          مشاهده همه
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" id="featuredProducts">
+        <!-- Products injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-900 mb-3">چرا تاجسرا؟</h2>
+        <p class="text-stone-500">دلایل انتخاب مشتریان ما</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center p-6 rounded-2xl bg-stone-50 border border-stone-100 hover:shadow-lg transition-shadow">
+          <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-gold-100 flex items-center justify-center text-gold-600">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="font-bold text-lg mb-2">کیفیت عالی</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">استفاده از مواد درجه یک و ساخت با دقت بالا برای دوام و زیبایی بیشتر</p>
+        </div>
+        <div class="text-center p-6 rounded-2xl bg-stone-50 border border-stone-100 hover:shadow-lg transition-shadow">
+          <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-rose-100 flex items-center justify-center text-rose-500">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="font-bold text-lg mb-2">طراحی با سلیقه</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">انتخاب و طراحی توسط پروین آتشکار با سال‌ها تجربه در زمینه اکسسوری مو</p>
+        </div>
+        <div class="text-center p-6 rounded-2xl bg-stone-50 border border-stone-100 hover:shadow-lg transition-shadow">
+          <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-bold text-lg mb-2">قیمت مناسب</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">فروش مستقیم بدون واسطه با بهترین قیمت برای بدلیجات خام و آماده</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Section - WhatsApp + Rubika + Eitaa -->
+  <section class="py-16 md:py-20 bg-stone-50" id="order">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-900 mb-3">ثبت سفارش</h2>
+        <p class="text-stone-500 max-w-xl mx-auto">از طریق یکی از پیام‌رسان‌های زیر با ما در ارتباط باشید. شماره: <span class="font-bold text-stone-800" dir="ltr">۰۹۳۶۰۶۶۵۶۱۶</span></p>
+      </div>
+
+      <div class="grid sm:grid-cols-3 gap-5">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/989360665616?text=سلام%20میخوام%20از%20تاجسرا%20سفارش%20بدم" target="_blank" rel="noopener"
+           class="group flex flex-col items-center p-6 md:p-8 bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-xl hover:border-green-200 transition-all hover:-translate-y-1">
+          <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <h3 class="font-bold text-lg text-stone-800 mb-1">واتساپ</h3>
+          <p class="text-sm text-stone-500 mb-3">چت مستقیم و سریع</p>
+          <span class="text-xs font-medium text-green-600 bg-green-50 px-3 py-1 rounded-full">شروع گفتگو</span>
+        </a>
+
+        <!-- Rubika -->
+        <a href="https://rubika.ir/" target="_blank" rel="noopener"
+           onclick="navigator.clipboard.writeText('09360665616'); alert('شماره ۰۹۳۶۰۶۶۵۶۱۶ کپی شد!\nحالا در روبیکا جستجو کنید.');"
+           class="group flex flex-col items-center p-6 md:p-8 bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all hover:-translate-y-1">
+          <div class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm0-8h-2V7h2v2zm4 8h-2v-4h2v4zm0-6h-2V7h2v4z"/></svg>
+          </div>
+          <h3 class="font-bold text-lg text-stone-800 mb-1">روبیکا</h3>
+          <p class="text-sm text-stone-500 mb-3">شماره کپی می‌شود</p>
+          <span class="text-xs font-medium text-purple-600 bg-purple-50 px-3 py-1 rounded-full" dir="ltr">۰۹۳۶۰۶۶۵۶۱۶</span>
+        </a>
+
+        <!-- Eitaa -->
+        <a href="https://eitaa.com/" target="_blank" rel="noopener"
+           onclick="navigator.clipboard.writeText('09360665616'); alert('شماره ۰۹۳۶۰۶۶۵۶۱۶ کپی شد!\nحالا در ایتا جستجو کنید.');"
+           class="group flex flex-col items-center p-6 md:p-8 bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-xl hover:border-blue-200 transition-all hover:-translate-y-1">
+          <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+          </div>
+          <h3 class="font-bold text-lg text-stone-800 mb-1">ایتا</h3>
+          <p class="text-sm text-stone-500 mb-3">شماره کپی می‌شود</p>
+          <span class="text-xs font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full" dir="ltr">۰۹۳۶۰۶۶۵۶۱۶</span>
+        </a>
+      </div>
+
+      <p class="text-center text-sm text-stone-400 mt-6">برای روبیکا و ایتا: روی دکمه بزنید تا شماره کپی شود، سپس در اپ جستجو کنید.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-300 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-white font-bold">ت</div>
+            <span class="text-xl font-bold text-white">تاجسرا</span>
+          </div>
+          <p class="text-sm leading-relaxed text-stone-400">فروشگاه تخصصی بدلیجات خام و آماده، گیره مو، تل مو، تاج عروس و اکسسوری‌های لوکس. مدیریت: پروین آتشکار</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-white mb-4">دسترسی سریع</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-gold-400 transition-colors">خانه</a></li>
+            <li><a href="products.html" class="hover:text-gold-400 transition-colors">محصولات</a></li>
+            <li><a href="about.html" class="hover:text-gold-400 transition-colors">درباره ما</a></li>
+            <li><a href="contact.html" class="hover:text-gold-400 transition-colors">تماس با ما</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-white mb-4">تماس با ما</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <a href="tel:09360665616" class="hover:text-gold-400 transition-colors" dir="ltr">۰۹۳۶۰۶۶۵۶۱۶</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <a href="https://wa.me/989360665616" target="_blank" class="hover:text-gold-400 transition-colors">واتساپ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-stone-800 pt-6 text-center text-sm text-stone-500">
+        <p>© ۱۴۰۴ تاجسرا — تمامی حقوق محفوظ است. طراحی شده با ❤️ برای پروین آتشکار</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/989360665616" target="_blank" rel="noopener"
+     class="fixed bottom-6 left-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-all"
+     aria-label="واتساپ">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
